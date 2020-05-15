@@ -84,7 +84,8 @@
             }
         }
         ?>
-
+        
+        <?php if( !is_front_page() ) : ?>
          <!-- Intro Section -->
         <section class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background1" data-background-img="<?php echo $header_background; ?>">
             <div class="container">
@@ -98,4 +99,5 @@
         </section>
         <div class="clearfix"></div>
         <!-- End Intro Section -->
+        <?php endif; ?>
 

@@ -1,7 +1,7 @@
 <?php
 /**
  * The main template file
- *
+ * Template Name: Home Page
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
  * It is used to display a page when nothing more specific matches a query.
@@ -16,20 +16,16 @@ get_header();
 ?>
 
  <!-- CONTENT --------------------------------------------------------------------------------->
-        
+
 <!-- Blank Section -->
-<section class="ptb ptb-sm-80">
-    <div class="container">
-        <div class="row">
-            <!-- Post Item -->
-            <div class="col-lg-12 col-md-12">
-                <div class="row container-grid">
-                	
-                </div>
-            </div>
-            <!-- End Post Item -->
-        </div>
-    </div>
+<section class="ptb-sm-80">                
+	<?php 
+    if( have_posts() ) {
+        while( have_posts() ) {
+            the_post();
+            the_content();
+        }
+    } ?>   
 </section>
 <!-- End Blank Section -->
 
