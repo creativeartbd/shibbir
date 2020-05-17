@@ -41,9 +41,8 @@
                     <div class="row d-flex flex-md-row align-items-center">
                         <div class="logo mr-auto">
                             <!--logo-->
-                            <a href="<?php echo site_url( '/' ); ?>">
-                                <span class="logo-light">
-                                    <<?php echo bloginfo( 'title' ); ?> <span class="blinking-dark">/</span>></span>
+                            <a href="<?php site_url( '/' ); ?>">
+                                <span class="logo-light">< <?php echo bloginfo( 'title' ); ?> <span class="blinking-dark">/</span>></span>
                                 <span class="logo-dark">< <?php echo bloginfo( 'title' ); ?> <span class="blinking-light">/</span>></span>
                             </a>
                             <!--End logo-->
